@@ -28,18 +28,18 @@ export const config = {
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: true,
     }]],
-    
+
     maxInstances: 1,
   
     capabilities: isBrowserStack
         ? [
             {
                 platformName: 'Android', 
-                'appium:deviceName': 'Google Pixel 4 XL ',
+                'appium:deviceName': 'Google Pixel 4 XL',
                 'appium:platformVersion': '10.0', 
                 'appium:automationName': 'UiAutomator2',
-                //'appium:app': 'bs://15c15dc183745b325adbffcef170d9e1666c8d53',
-                "appium:app": "MyHillelApp"
+                'appium:app': 'bs://15c15dc183745b325adbffcef170d9e1666c8d53',
+                //"appium:app": "MyHillelApp"
 
             
             },
