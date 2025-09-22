@@ -22,9 +22,13 @@ export const config = {
         ],
     ] : ['appium'], 
 
-    
     specs: ['./test/specs/pom-tests/*.js'],
-    reporters: ['spec'],
+    reporters: ['spec', ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
+    
     maxInstances: 1,
   
     capabilities: isBrowserStack

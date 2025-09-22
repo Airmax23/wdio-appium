@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6746","Log in without password","","2025-09-22","passed","2025-09-22","","Log in tests","",""
+"","7573","Log in with incorrect credentials","","2025-09-22","passed","2025-09-22","","Log in tests","",""
+"","7148","Log in with without email","","2025-09-22","passed","2025-09-22","","Log in tests","",""
+"","3967","Opening Restore Access popup","","2025-09-22","passed","2025-09-22","","Log in tests","",""
+"","4147","Opening Registration popup","","2025-09-22","passed","2025-09-22","","Log in tests","",""
+"","11354","Log in with correct credentials","","2025-09-22","passed","2025-09-22","","Log in tests","",""
