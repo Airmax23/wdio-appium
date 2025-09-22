@@ -92,7 +92,7 @@ export const config = {
             [
                 'browserstack',
                 {
-                    app: 'bs://c7589e52f575e39bf1ed2682b18a91862ee8902f', 
+                    app: 'bs://15c15dc183745b325adbffcef170d9e1666c8d53', 
                     buildIdentifier: `${process.env.BUILD_NUMBER || 'local-build'}`, 
                     browserstackLocal: true,
                 },
