@@ -26,6 +26,7 @@ export const config = {
 
     
     specs: ['./test/specs/pom-tests/*.js'],
+    reporters: ['spec'],
 
    
     maxInstances: 1,

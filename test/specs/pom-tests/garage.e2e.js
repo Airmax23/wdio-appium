@@ -7,17 +7,33 @@ import { activateApp, closeApp, rotateDevice } from '../../helpers/appStatesHelp
 
 describe('Garage tests', () => {
 
-        before(async () =>{
+/*         before(async () => {
             if (isBrowserStack) {
                  await rotateDevice(); 
             }
-            
+
             await HomeScreen.openSignInForm();
             await SignInForm.setEmail(users.mainUser.email);
             await SignInForm.setPassword(users.mainUser.password);
             await SignInForm.clickLoginButton();
             await expect(GarageScreen.screenTitle).toBeDisplayed();
-        })
+        }) */
+
+        before(async () => {
+    // якщо запускаємо на BrowserStack → в capabilities буде ключ "bstack:options"
+        const isBrowserStack = !!browser.capabilities['bstack:options'];
+
+        if (isBrowserStack) {
+            await rotateDevice();
+        }
+
+            await HomeScreen.openSignInForm();
+            await SignInForm.setEmail(users.mainUser.email);
+            await SignInForm.setPassword(users.mainUser.password);
+            await SignInForm.clickLoginButton();
+            await expect(GarageScreen.screenTitle).toBeDisplayed();
+});
+
 
 
         beforeEach(async () =>{
@@ -32,7 +48,7 @@ describe('Garage tests', () => {
 
         })
 
-    it.only('Add a car - BMW 5', async () => {
+    it('Add a car - BMW 5', async () => {
         await GarageScreen.addCarByBrandAndModelIndexes(1, 1);
         await GarageScreen.verifyLastAddedCar('BMW', '5');
         
