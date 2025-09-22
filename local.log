@@ -236,3 +236,51 @@ Thu Sep 18 2025 16:35:09:455 GMT+0300 (EEST) --  *** Error: The connection to Br
 You need to allow outbound traffic for *.browserstack.com in your corporate firewall to setup local testing.
 For any other problem please contact support@browserstack.com.
 
+
+Mon Sep 22 2025 10:38:25:292 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 10:38:26:435 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 35318
+Mon Sep 22 2025 10:38:26:733 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 10:38:27:6 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+
+
+Mon Sep 22 2025 10:43:28:800 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 10:43:30:1 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 35679
+Mon Sep 22 2025 10:43:30:218 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 10:43:30:456 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+
+
+Mon Sep 22 2025 10:46:28:192 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 10:46:29:422 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 35999
+Mon Sep 22 2025 10:46:29:636 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 10:46:29:968 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+
+
+Mon Sep 22 2025 10:48:39:618 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 10:48:40:761 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 36296
+Mon Sep 22 2025 10:48:40:986 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 10:48:41:118 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+
+
+Mon Sep 22 2025 10:52:27:960 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 10:52:28:870 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 36964
+Mon Sep 22 2025 10:52:29:182 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 10:52:29:605 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+
+
+Mon Sep 22 2025 11:01:56:669 GMT+0300 (EEST) -- Starting configuration console on http://localhost:45454
+Mon Sep 22 2025 11:01:57:604 GMT+0300 (EEST) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 37414
+Mon Sep 22 2025 11:01:57:925 GMT+0300 (EEST) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Mon Sep 22 2025 11:01:58:322 GMT+0300 (EEST) -- Press Ctrl-C to exit
+
+

@@ -7,8 +7,6 @@ export const config = {
     
     user: isBrowserStack ? process.env.BROWSERSTACK_USERNAME : undefined,
     key: isBrowserStack ? process.env.BROWSERSTACK_ACCESS_KEY : undefined,
-
-    
     hostname: isBrowserStack ? 'hub.browserstack.com' : '127.0.0.1',
     port: isBrowserStack ? 443 : 4723,
 
@@ -27,11 +25,8 @@ export const config = {
     
     specs: ['./test/specs/pom-tests/*.js'],
     reporters: ['spec'],
-
-   
     maxInstances: 1,
-
-    
+  
     capabilities: isBrowserStack
         ? [
             {
@@ -39,7 +34,10 @@ export const config = {
                 'appium:deviceName': 'Google Pixel 4 XL',
                 'appium:platformVersion': '10.0', 
                 'appium:automationName': 'UiAutomator2',
-                'appium:app': 'bs://c7589e52f575e39bf1ed2682b18a91862ee8902f',
+                //'appium:app': 'bs://15c15dc183745b325adbffcef170d9e1666c8d53',
+                "appium:app": "MyHillelApp"
+
+            
             },
         ]
         : [

@@ -14,8 +14,8 @@
     "wdio": "wdio run ./wdio.conf.js",
     "start-emulator": "emulator -avd Pixel_4_API_34",
     "test": "npx wdio run ./wdio.conf.js --spec ./test/specs/pom-tests/signIn.e2e.js",
-   // "test: browserstack": "TEST_ENV='browserstack'npx wdio run ./wdio.conf.js --spec ./test/specs/pom-tests/garage.e2e.js"
-   "test:browserstack": "IS_BROWSERSTACK=true wdio run ./wdio.conf.js"
+    "test:browserstack": "TEST_ENV='browserstack'npx wdio run ./wdio.conf.js --spec ./test/specs/pom-tests/garage.e2e.js"
+    
   },
   "dependencies": {
     "dotenv": "^17.2.2"

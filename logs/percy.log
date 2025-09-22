@@ -1,6 +1,6 @@
-[90m2025-09-18T13:24:42.333Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Starting percy
-[90m2025-09-18T13:24:43.918Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m Unable to fetch percy project token
-[90m2025-09-18T13:24:43.920Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Error in percy setup Error: Could not start percy, check percy logs for info.
+[90m2025-09-22T08:01:48.635Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Starting percy
+[90m2025-09-22T08:01:49.549Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m Unable to fetch percy project token
+[90m2025-09-22T08:01:49.551Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Error in percy setup Error: Could not start percy, check percy logs for info.
     at BrowserstackLauncherService.setupPercy (file:///Users/airmax/Documents/Mobile%20Automation/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3936:15)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async BrowserstackLauncherService.onPrepare (file:///Users/airmax/Documents/Mobile%20Automation/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3811:9)
