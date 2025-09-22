@@ -3,11 +3,15 @@ import GarageScreen from '../../page-jbjects/screens/GarageScreen';
 import HomeScreen from '../../page-jbjects/screens/HomeScreen';
 import SignInForm from '../../page-jbjects/forms/SignInForm';
 import { users } from '../../test-data/credentials';
-import { activateApp, closeApp } from '../../helpers/appStatesHelper';
+import { activateApp, closeApp, rotateDevice } from '../../helpers/appStatesHelper';
 
 describe('Garage tests', () => {
 
         before(async () =>{
+            if (isBrowserStack) {
+                 await rotateDevice(); 
+            }
+            
             await HomeScreen.openSignInForm();
             await SignInForm.setEmail(users.mainUser.email);
             await SignInForm.setPassword(users.mainUser.password);
@@ -28,7 +32,7 @@ describe('Garage tests', () => {
 
         })
 
-    it('Add a car - BMW 5', async () => {
+    it.only('Add a car - BMW 5', async () => {
         await GarageScreen.addCarByBrandAndModelIndexes(1, 1);
         await GarageScreen.verifyLastAddedCar('BMW', '5');
         
