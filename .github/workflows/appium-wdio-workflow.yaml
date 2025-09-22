@@ -13,58 +13,63 @@ jobs:
     env:
       BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
       BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-      TEST_ENV : "browserstack"
+      TEST_ENV: "browserstack"
+
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Run WDIO Tests
-      run: npm run test:browserstack
+      - name: Run WDIO Tests on BrowserStack
+        run: npm run test:browserstack
 
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
 
-    - name: Generate Allure Report
-      if: ${{ always() }}
-      run: |
-          npm install -g allure-commandline
+      - name: Generate Allure Report
+        if: ${{ always() }}
+        run: |
           allure generate allure-results --clean -o allure-report
 
-    - name: Upload Allure Report as artifact
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v4
-      with:
+      - name: Upload Allure Report as artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
           name: allure-report
           path: allure-report
 
   deploy:
-      if: ${{ always() }}
-      runs-on: ubuntu-latest
-      needs: wdio-tests
-      permissions:
-        pages: write
-        id-token: write
-      steps:
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    needs: wdio-tests
+    permissions:
+      pages: write
+      id-token: write
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Download WDIO report artifact
         uses: actions/download-artifact@v4
         with:
           name: allure-report
           path: out
+
       - name: Setup pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact to pages
         uses: actions/upload-pages-artifact@v1
         with:
           path: out
-      - name: Deploy to GitHub pages
+
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-         
