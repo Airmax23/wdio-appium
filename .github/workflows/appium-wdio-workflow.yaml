@@ -31,11 +31,13 @@ jobs:
 
 
     - name: Generate Allure Report
+      if: ${{ always() }}
       run: |
           npm install -g allure-commandline
           allure generate allure-results --clean -o allure-report
 
     - name: Upload Allure Report as artifact
+      if: ${{ always() }}
       uses: actions/upload-artifact@v4
       with:
           name: allure-report
